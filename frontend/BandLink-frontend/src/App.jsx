@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("");
 
 useEffect(() => {
-  fetch("https://<your-username>-8000.githubpreview.dev/")
+  fetch("https://cautious-couscous-v6564494vjq4hp4x-8000.app.github.dev/")
     .then(res => {
       console.log("Response status:", res.status);
       return res.json();
@@ -16,7 +16,7 @@ useEffect(() => {
     .catch(err => console.error("Fetch error:", err));
 }, []);
 
-  return <h1>{message || "Loading..."}</h1>;
+  return <h1>{message || "Balls"}</h1>;
 }
 
 export default App;
